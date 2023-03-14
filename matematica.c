@@ -1,22 +1,34 @@
 #include <stdio.h>
 
 int main()
-
 {
     int x;
     int y;
     int z;
-    printf("è un lato del triangolo?");
+    printf("insersci tre numeri");
     scanf("%d", &x);
     scanf("%d", &y);
     scanf("%d", &z);
 
-    if(x+y>z && x+z>y && y+z>z)
+    if (x+y>z && x+z>y && y+z>x)
     {
-    printf ("è lato di un triangolo\n");
+    printf ("è un triangolo");
+    
+       if ("x==y && y==z && z==x")
+    
+       printf ("è triangolo equilatero\n");
+    
+       else if("z!=y && x!=y && x!=z")
+    
+        printf("è un triangolo scaleno\n");
+    
+         else
+         printf ("è un triangolo isoscele\n");
     }
-    else
+
+    else 
     {
-        printf("non è un lato di un triangolo\n");
+    
+    printf("non è un triangolo\n");
     }
 }
